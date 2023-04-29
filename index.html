@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABVP</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        h1 {
+            text-align: center;
+            line-height: 45px;
+            margin-right: 50px;
+        }
+
+        h1 span {
+            color: brown;
+        }
+
+        .box {
+            width: 390px;
+            margin: 0 auto;
+            position: relative;
+
+        }
+
+        .box .box-pic {
+            position: relative;
+            transform-origin: 79% 50% 0;
+            transition: all 0.5s;
+            z-index: 1;
+        }
+
+        .box .box-pic:after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 78%;
+            width: 8px;
+            height: 8px;
+            background: #000;
+            border-radius: 50%;
+        }
+
+        .box .box-pic img {
+            border-radius: 50%;
+        }
+
+        .box:hover .box-pic {
+            transform: rotate(-150deg);
+        }
+
+        .box .box-content {
+            text-align: center;
+            color: #fff;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 80%;
+            height: 97%;
+            /* background: brown; */
+            border-radius: 50%;
+            padding: 70px 20px;
+            box-sizing: border-box;
+            /* margin-left: 80px; */
+
+
+        }
+
+        .box-content {
+            position: relative;
+            overflow: hidden;
+
+        }
+
+        .box-content {
+            background-image: linear-gradient(to top, rgba(0, 0, 0, 8), rgba(0, 0, 0, 0) 60%), url('./vaibhu2.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            /* or contain */
+        }
+
+        .name {
+            position: absolute;
+            bottom: 10px;
+            left: 0;
+        }
+        h3 {
+  text-shadow: 2px 2px 5px #000;
+}
+
+@media (max-width:430px){
+    h1{
+        margin-left: 20px;
+    }
+    .box-content{
+        margin-left: 20px;
+    }
+    .box-pic{
+        margin-left: 20px;
+    }
+}
+
+    </style>
+</head>
+
+<body>
+    <h1><span>अखिल भारतीय विद्यार्थी परिषद</span><br>देवगिरी प्रदेश</h1>
+
+    <div class="box">
+
+        <div class="box-pic">
+            <img src="Akhil_Bharatiya_Vidyarthi_Parishad_official_logo.png" alt="ABVP">
+        </div>
+        <div class="box-content">
+            <div class="name">
+                <h3>Vaibhavi G. Dhivare</h3>
+                <p>Former Secretory ABVP Dhule<br>
+                National Executive Committee(NEC)Member</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
